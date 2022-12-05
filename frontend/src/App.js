@@ -24,7 +24,8 @@ import MyTickets from "./pages/MyTickets";
 import ProtectedRoutes from "./components/ProtectedRoutes";
 
 const client = new ApolloClient({
-  uri: "https://moath-ticketing-system.onrender.com/graphql",
+  uri: "http://localhost:5000/graphql",
+  // uri: "https://moath-ticketing-system.onrender.com/graphql",
   cache: new InMemoryCache(),
 });
 

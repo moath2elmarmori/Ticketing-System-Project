@@ -11,11 +11,7 @@ const graphqlSchema = require("./graphql/graphqlSchema");
 
 connectDB();
 
-app.use(
-  cors({
-    origin: "*",
-  })
-);
+app.use(cors());
 
 if (process.env.NODE_ENV !== "production") {
   app.get("/we-are-in", (req, res) => {
